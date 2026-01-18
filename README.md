@@ -22,7 +22,7 @@ Dette er CORE v2 - en stabil Next.js-applikasjon med App Router og Tailwind CSS,
 
 ## Teknologi Stack
 
-- **Next.js 14.2.5** (App Router)
+- **Next.js 14.2.35** (App Router) - Patched version with security fixes
 - **React 18.3.1**
 - **Tailwind CSS 3.4.1**
 - **TypeScript 5**
