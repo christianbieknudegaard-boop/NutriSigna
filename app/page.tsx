@@ -9,7 +9,7 @@ export default function Home() {
           Dette er den stabile basen for Vercel deployment. Prosjektet er bygget med:
         </p>
         <ul className="list-disc list-inside text-slate-600 space-y-1 mb-6">
-          <li>Next.js 14.2.5 (App Router)</li>
+          <li>Next.js 14.2.35 (App Router)</li>
           <li>React 18.3.1</li>
           <li>Tailwind CSS</li>
           <li>TypeScript</li>
