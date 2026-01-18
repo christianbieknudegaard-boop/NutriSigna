@@ -10,8 +10,6 @@
     "vercel-build": "npm run build",
     "postinstall": "prisma generate",
     "prisma:seed": "ts-node-esm prisma/seed.ts",
-    "datasets:export": "node --input-type=module scripts/export-datasets.mjs",
-    "datasets:import": "node prisma/importer.cjs"
     "datasets:stream-import": "node prisma/stream_importer.cjs",
   },
   "dependencies": {
