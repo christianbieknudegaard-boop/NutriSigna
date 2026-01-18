@@ -7,9 +7,9 @@ export default function FoodsPage() {
       <h1 className="text-xl font-bold">Matvarer</h1>
       <ul className="space-y-2">
         {foods.map(f => (
-          <li key={f.id} className="rounded border bg-white p-3">
-            <Link href={`/foods/${f.id}`} className="font-medium">{f.name}</Link>
-            <p className="text-sm text-slate-600">{f.group}</p>
+          <li key={f.id} className="rounded-2xl border bg-white/70 p-4">
+            <Link href={`/foods/${f.id}`} className="font-semibold">{f.name}</Link>
+            <p className="text-sm text-slate-600 mt-1">{f.group}</p>
           </li>
         ))}
       </ul>
