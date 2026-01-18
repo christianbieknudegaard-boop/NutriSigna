@@ -33,3 +33,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# old project structure (not part of CORE v2)
+ibd-ibs-pcos-core/
