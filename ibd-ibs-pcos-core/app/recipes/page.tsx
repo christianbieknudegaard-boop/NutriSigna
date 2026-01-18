@@ -7,9 +7,9 @@ export default function RecipesPage() {
       <h1 className="text-xl font-bold">Oppskrifter</h1>
       <ul className="space-y-2">
         {recipes.map(r => (
-          <li key={r.id} className="rounded border bg-white p-3">
-            <Link href={`/recipes/${r.id}`} className="font-medium">{r.title}</Link>
-            <p className="text-sm text-slate-600">{r.description}</p>
+          <li key={r.id} className="rounded-2xl border bg-white/70 p-4">
+            <Link href={`/recipes/${r.id}`} className="font-semibold">{r.title}</Link>
+            <p className="text-sm text-slate-600 mt-1">{r.description}</p>
           </li>
         ))}
       </ul>

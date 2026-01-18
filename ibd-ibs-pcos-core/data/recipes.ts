@@ -3,10 +3,13 @@ export const recipes = [
     id: "r1",
     title: "Enkel havregrøt",
     description: "Mild frokost som passer mange.",
+    timeMin: 10,
+    servings: 1,
+    fodmap: "green",
     ingredients: [
       { name: "Havregryn", amount: "40 g" },
       { name: "Vann", amount: "2 dl" }
     ],
     steps: ["Kok opp vann", "Tilsett havre", "La trekke"]
   }
-];
+] as const;

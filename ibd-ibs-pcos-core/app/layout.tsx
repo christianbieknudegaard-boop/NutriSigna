@@ -1,18 +1,17 @@
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 
 export const metadata = {
-  title: "IBD · IBS · PCOS – Mat",
-  description: "Core app"
+  title: "IBD • IBS • PCOS Mat (CORE)",
+  description: "Core-app"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="no">
-      <body className="min-h-screen bg-slate-100 text-slate-900">
-        <header className="border-b bg-white px-6 py-4 font-semibold">
-          IBD · IBS · PCOS – Mat
-        </header>
-        <main className="mx-auto max-w-5xl p-6">{children}</main>
+      <body>
+        <NavBar />
+        <main className="mx-auto max-w-5xl px-4 py-6">{children}</main>
       </body>
     </html>
   );
