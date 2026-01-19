@@ -1,0 +1,1 @@
+# ignore generated artifacts and patches\n/downloads/\nPATCH-13-*.patch\n*.tar.gz\n
