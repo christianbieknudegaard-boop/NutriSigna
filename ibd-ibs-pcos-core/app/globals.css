@@ -2,5 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; }
-body { @apply bg-slate-50 text-slate-900; }
+:root { 
+  color-scheme: light;
+}
+
+body { 
+  @apply bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50 text-slate-900;
+  min-height: 100vh;
+}
+
+/* Mobile safe area and touch targets */
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+button, .btn {
+  @apply touch-manipulation rounded-lg px-4 py-2;
+}
+
+/* Responsive container tweak */
+.container-main {
+  @apply mx-auto max-w-5xl px-4 py-6;
+}
+
+@media (max-width: 640px) {
+  .container-main { @apply px-3 py-5; }
+  .prose { @apply text-sm; }
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  @apply leading-tight;
+}
+
+p {
+  @apply leading-relaxed;
+}
+
+/* Link styles */
+a {
+  @apply transition-colors duration-200;
+}
+
+a:hover {
+  @apply text-blue-600;
+}
+
+/* Custom utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Backdrop blur support */
+@supports (backdrop-filter: blur(10px)) {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Camera preview styles */
+.camera-preview {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Mobile spacing and card utilities */
+.card {
+  @apply bg-white/60 p-4 rounded-lg shadow-sm border border-slate-100;
+}
+
+@media (max-width: 640px) {
+  .card { @apply p-3; }
+  .btn { @apply w-full text-center; }
+}
+
